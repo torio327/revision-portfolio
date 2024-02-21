@@ -6,7 +6,7 @@ import MotionScale from "@/components/MotionScale";
 import MotionWrapper from "@/components/MotionWrapper";
 import MotionX from "@/components/MotionX";
 import MotionxTwo from "@/components/MotionxTwo";
-
+import ShowPost from "@/components/ShowPost";
 
 export {
     FadeUp,
@@ -17,4 +17,5 @@ export {
     MotionWrapper,
     MotionX,
     MotionxTwo,
+    ShowPost,
 };
