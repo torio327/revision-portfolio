@@ -40,7 +40,6 @@ export default function Hamburger() {
 
 
                 <div className={'flex flex-col text-center gap-y-12 mt-24'}>
-                    <Link href={'/'}>Home</Link>
                     <Link href={'/About'}>About</Link>
                     <Link href={'/BlogTwo'}>Blog</Link>
                     <Link href={'/Contact'}>Contact</Link>

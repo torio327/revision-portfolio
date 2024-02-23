@@ -4,6 +4,7 @@ import MotionX from "@/components/MotionX";
 import MotionxTwo from "@/components/MotionxTwo";
 import {Playfair_Display} from "next/font/google";
 import Image from "next/image";
+import Opening from "@/components/Opening";
 
 const playfair = Playfair_Display({
     weight: "400",
@@ -29,13 +30,14 @@ export default function Home() {
                     </div>
                     <div className={"w-screen h-[700px] pt-[100px] bg-white opacity-80"}>
                         <div className="titleOne">
-                            <MotionX>
-                                <div className="lg:flex justify-center pt-40 text-center text-7xl gap-x-20 max-md:flex-col">
-                                    <h1 className={playfair.className}><span className={'mx-10'}>About</span><span
-                                        className={'mx-10'}> this</span><span className={'mx-10'}>portfolio</span>
-                                    </h1>
+                            <Opening>
+                                <div
+                                    className="lg:flex justify-center pt-40 text-center text-7xl gap-x-20 max-md:flex-col ">
+                                    <h1 className={playfair.className}>About</h1>
+                                    <h1 className={playfair.className}>This</h1>
+                                    <h1 className={playfair.className}>Portfolio</h1>
                                 </div>
-                            </MotionX>
+                            </Opening>
 
                         </div>
 
@@ -54,18 +56,18 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={"w-screen h-screen"}>
-                        <MotionX>
+                        <Opening>
                             <h1 className={`${playfair.className} pt-20 text-7xl text-center`}>Profile</h1>
-                        </MotionX>
+                        </Opening>
 
                         <div className="">
                             <MotionxTwo>
                                 <div className={"my-32 flex justify-center gap-x-[50px]"}>
-                                    <div className={"bg-white h-[100px]"}>
+                                    <div className={"bg-white h-[100px] ml-2"}>
                                         <Image src={"/image/dog_pug.png"} alt={'pug'} width={100} height={100}/>
                                     </div>
 
-                                    <div className="  w-[300px]">
+                                    <div className="  w-[300px] mr-2">
                                         <p className={''}>愛知県出身のエンジニアです。高校の頃は機械について勉強していました。大学ではフロンティア工学類（機械と電子情報を組み合わせた学類）に所属しています。
                                             子供のころから、
                                             折り紙や紙工作など何かを作ることが好きでした。
