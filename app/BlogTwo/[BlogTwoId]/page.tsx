@@ -20,7 +20,7 @@ export default async function BlogTwoDetails({params}: { params: { BlogTwoId: st
             <div className="mt-14">
                 <h1 className={'text-5xl text-center'}>{OneData[0].title}</h1>
                 <Image src={thumbnailUrl} alt={'thumbnail'} width={600} height={400} className={'mx-auto mt-24'}/>
-                <div className="flex justify-center">
+                <div className="flex justify-center mx-5">
                     <div dangerouslySetInnerHTML={{__html: OneData[0].content}} className={'mt-10 mb-20 w-[900px]'}/>
                 </div>
             </div>
