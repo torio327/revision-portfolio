@@ -28,12 +28,12 @@ export default function FadeUpTwo({
                 transition={transition}
                 variants={variants}
                 className={FadeUpTwoStyle}>
-                <div className={" flex flex-col mt-56 lg:flex-row"}>
+                <div className={" flex max-lg:flex-col mt-56 lg:flex-row"}>
                     <div className="ml-9 max-lg:mx-auto">
                         <Image src={FadeUpTwoImage} alt={FadeUpTwoAlt} width={600} height={400}/>
                     </div>
-                    <div className={" max-lg:mt-10"}>
-                        <div className={"w-[500px] ml-28 grid gap-y-4"}>
+                    <div className={"mr-6 max-lg:mt-10 "}>
+                        <div className={"lg:w-[500px] ml-28 grid gap-y-4"}>
                             <p className={KleeOne.className}>
                                 {FadeUpTwoTextOne}
                             </p>

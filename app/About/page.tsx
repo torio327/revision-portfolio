@@ -4,7 +4,6 @@ import MotionWrapper from "@/components/MotionWrapper";
 import FadeUp from "@/components/FadeUp";
 import {Cousine, Klee_One} from "next/font/google";
 import FadeUpTwo from "@/components/FadeUpTwo";
-import Hamburger from "@/components/Hamburger";
 
 const Cous = Cousine({
     weight: "400",
