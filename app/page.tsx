@@ -1,7 +1,6 @@
 'use client'
 import Navbar from "@/components/Navbar";
 import {useEffect} from "react";
-import Footer from "@/components/Footer";
 import {gsap} from "gsap";
 import Image from "next/image";
 import {Playfair_Display} from "next/font/google";
@@ -17,10 +16,10 @@ export default function Page() {
     useEffect(() => {
         const tl = gsap.timeline()
         tl.set('.opening', {x: -1080})
-            .set('.welcome', {y: -300})
+            .set('.welcome', {y: -600})
             .set('.to', {y: -400})
-            .set('.my', {y: -400})
-            .set('.portfolio', {y: -400})
+            .set('.my', {y: -600})
+            .set('.portfolio', {y: -600})
             .set('.link', {})
 
         tl.to('.opening', {x: 0, duration: 2, rotateY: 360})
@@ -60,24 +59,24 @@ export default function Page() {
                         <div className="h-screen">
                             <Navbar/>
 
-                            <div className="text-7xl text-white flex justify-center items-center gap-x-20">
-                                <div className="welcome"> Welcome</div>
-                                <div className="to">To</div>
-                                <div className="my">My</div>
-                                <div className="portfolio">Portfolio</div>
+                            <div className="text-7xl text-white flex justify-center items-center gap-x-20 max-md:flex-col">
+                                    <div className="welcome"> Welcome</div>
+                                    <div className="to">To</div>
+                                    <div className="my">My</div>
+                                    <div className="portfolio">Portfolio</div>
                             </div>
 
 
                         </div>
                     </div>
                     <div className="pointOne"></div>
-                        <div className={"w-screen h-[700px] pt-[100px] bg-white opacity-80"}>
+                    <div className={"w-screen h-[700px] pt-[100px] bg-white opacity-80"}>
                             <div className="titleOne">
                                 <MotionX>
-                                    <div className="pt-40 text-center text-7xl gap-x-20 ">
-                                        <h1 className={playfair.className}><span className={'mx-10'}>About</span><span
-                                            className={'mx-10'}> this</span><span className={'mx-10'}>portfolio</span>
-                                        </h1>
+                                    <div className="lg:flex justify-center pt-40 text-center text-7xl gap-x-20 max-md:flex-col ">
+                                        <h1 className={playfair.className}>About</h1>
+                                        <h1 className={playfair.className}>This</h1>
+                                        <h1 className={playfair.className}>Portfolio</h1>
                                     </div>
                                 </MotionX>
 

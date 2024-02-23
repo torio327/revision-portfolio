@@ -7,10 +7,10 @@ export default function MotionX({children}:any){
                 initial={'positionOne'}
                 whileInView={'finish'}
                 viewport={{once:true}}
-                transition={{duration:1}}
+                transition={{duration:1.5}}
                 variants={{
                     finish:{x:1/2},
-                    positionOne:{x:-1200}
+                    positionOne:{x:-500}
                 }}
             >
                 {children}

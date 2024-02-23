@@ -3,10 +3,9 @@ import {Navbar} from "@/components";
 import ShowPost from "@/components/ShowPost";
 
 
+export default function Page() {
 
-export default function Page(){
-
-    return(
+    return (
         <>
             <div className="bg-fixed bg-[url('/image/pink.jpg')] bg-cover">
                 <Navbar/>

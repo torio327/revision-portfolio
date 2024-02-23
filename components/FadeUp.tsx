@@ -29,16 +29,16 @@ export default function FadeUp({
                 variants={variants}
                 className={FadeUpStyle}
             >
-                <div className={"relative py-[150px] "}>
-                    <div className={"absolute ml-9 top-1/2 w-[500px] grid gap-y-4"}>
+                <div className={"relative py-[150px] flex flex-col items-center lg:flex-row"}>
+
+                    <Image src={FadeUpImage} alt={FadeUpAlt} width={600} height={400}
+                           className={'w-full lg:mr-10  max-md:w-auto max-lg:w-auto lg:order-2'}/>
+                    <div className={"ml-9 mb-4 lg:mb-0 lg:mr-8 lg:order-1 max-lg:mt-10"}>
                         <p className={KleeOne.className}>{FadeUpTextOne}</p>
                         <p className={`${KleeOne.className} text-2xl`}>{FadeUpTextTwo}</p>
                     </div>
-                    <div className="flex justify-end">
-                        <Image src={FadeUpImage} alt={FadeUpAlt} width={600} height={400}
-                               className={"mr-8"}/>
-                    </div>
                 </div>
+
             </motion.div>
         </>
     )

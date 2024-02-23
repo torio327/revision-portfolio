@@ -5,6 +5,7 @@ import {useRef, useState} from "react";
 import MotionWrapper from "@/components/MotionWrapper";
 import {Cousine} from "next/font/google";
 import {Navbar} from "@/components";
+import Link from "next/link";
 
 const Cous = Cousine({
     weight: "400",
@@ -52,7 +53,10 @@ export default function Page() {
         <div className={"back"}><MotionWrapper>
             <div className={"bg-fixed bg-center bg-[url('/image/brown_half_trans.png')] bg-cover w-fill "}>
                 <Navbar/>
-                <h1 className={`${Cous.className} text-4xl text-white text-center mt-18`}>contact</h1>
+                <h1 className={`${Cous.className} text-4xl text-white text-center mt-18`}>
+                    <span className={'text-red-500'}>このコンタクトフォームは現在機能していません。<br/>　連絡は<a  href={'mailto:torio327@icloud.com'} className={'underline'}>こちら</a>からお願いします。</span>
+
+                    <br/> contact</h1>
                 <section className=" ">
                     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
 

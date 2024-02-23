@@ -1,4 +1,5 @@
 import FadeUp from "@/components/FadeUp";
+import Hamburger from "@/components/Hamburger";
 import FadeUpTwo from "@/components/FadeUpTwo";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -18,4 +19,5 @@ export {
     MotionX,
     MotionxTwo,
     ShowPost,
+    Hamburger,
 };

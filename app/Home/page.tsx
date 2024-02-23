@@ -19,7 +19,7 @@ export default function Home() {
                     <div className="opening">
                         <div className="h-screen">
                             <Navbar/>
-                            <div className="text-7xl text-white flex justify-center items-center gap-x-20">
+                            <div className="text-7xl text-white flex justify-center items-center gap-x-20 max-md:flex-col">
                                 <div className="welcome"> Welcome</div>
                                 <div className="to">To</div>
                                 <div className="my">My</div>
@@ -30,7 +30,7 @@ export default function Home() {
                     <div className={"w-screen h-[700px] pt-[100px] bg-white opacity-80"}>
                         <div className="titleOne">
                             <MotionX>
-                                <div className="pt-40 text-center text-7xl gap-x-20 ">
+                                <div className="lg:flex justify-center pt-40 text-center text-7xl gap-x-20 max-md:flex-col">
                                     <h1 className={playfair.className}><span className={'mx-10'}>About</span><span
                                         className={'mx-10'}> this</span><span className={'mx-10'}>portfolio</span>
                                     </h1>

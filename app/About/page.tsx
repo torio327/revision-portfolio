@@ -4,6 +4,7 @@ import MotionWrapper from "@/components/MotionWrapper";
 import FadeUp from "@/components/FadeUp";
 import {Cousine, Klee_One} from "next/font/google";
 import FadeUpTwo from "@/components/FadeUpTwo";
+import Hamburger from "@/components/Hamburger";
 
 const Cous = Cousine({
     weight: "400",
@@ -22,7 +23,7 @@ export default function Page() {
                     <Navbar/>
                     <h1 className={`${Cous.className} text-4xl text-center text-white`}>About</h1>
                     <div className={"flex justify-center mt-20"}>
-                        <p className={`${KleeOne.className} text-4xl`}>2022年からプログラミングの勉強を始めました。</p>
+                        <p className={`${KleeOne.className} text-4xl text-center`}>2022年からプログラミングの勉強を始めました。</p>
                     </div>
                 </div>
 
@@ -33,7 +34,8 @@ export default function Page() {
                             variants={{visible: {opacity: 1, scale: 1}, hidden: {opacity: 0, scale: 0}}}
                             FadeUpImage={'/image/programing-pic-1.jpg'} FadeUpAlt={'pic1'}
                             FadeUpTextOne={'最初は何を書いているのか、どう勉強したらいいのかわからなかった'}
-                            FadeUpTextTwo={'だけど、webサイトを作れるようになりたいという考えを胸にプログラミングを続けた'}/>
+                            FadeUpTextTwo={'だけど、webサイトを作れるようになりたいという考えを胸にプログラミングを続けた'}
+                   />
                 </div>
                 <FadeUpTwo initial={'hidden'}
                            whileInView={'visible'}
