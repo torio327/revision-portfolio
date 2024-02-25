@@ -5,7 +5,6 @@ import {useRef, useState} from "react";
 import MotionWrapper from "@/components/MotionWrapper";
 import {Cousine} from "next/font/google";
 import {Navbar} from "@/components";
-import Link from "next/link";
 
 const Cous = Cousine({
     weight: "400",

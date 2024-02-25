@@ -1,12 +1,21 @@
-'use client';
-import {client} from "@/libs/client";
-import Image from "next/image";
 
+import Image from "next/image";
+import {client} from "@/libs/client";
+
+async function getContents(){
+    // @ts-ignore
+
+
+    const data=await client.getList({
+        customRequestInit:{
+            cache:"no-store",
+        },
+        endpoint:"blogthree",
+    })
+    return data;
+}
 export default async function BlogTwoDetails({params}: { params: { BlogTwoId: string }; }) {
-    const data = await client.get({
-            endpoint: 'blogthree',
-        }
-    )
+   const data = await getContents();
     console.log(data);
     const OneData = data.contents.filter((content: any) => {
         return content.id === params.BlogTwoId
