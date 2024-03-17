@@ -21,7 +21,6 @@ export default function Footer(){
         <Link href={"/"} className={YoungSerif.className}><h1 className="text-4xl text-white">Portfolio</h1></Link>
     </div>
 </div>
-
             </footer>
         </>
     )

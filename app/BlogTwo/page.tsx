@@ -3,6 +3,12 @@ import {Navbar} from "@/components";
 import Link from "next/link";
 import Hamburger from "../../components/Hamburger";
 import {Young_Serif} from "next/font/google";
+import {Metadata} from "next";
+
+export const metadata:Metadata={
+    title:"Blog",
+    description:"ブログ投稿です"
+}
 
 const YoungSerif = Young_Serif({
     weight:"400",

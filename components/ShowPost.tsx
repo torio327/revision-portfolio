@@ -1,4 +1,3 @@
-import {useEffect, useState} from "react";
 import {client} from "@/libs/client";
 import Link from "next/link";
 import Image from "next/image";
