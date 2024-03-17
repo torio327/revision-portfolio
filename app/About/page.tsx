@@ -49,7 +49,7 @@ export default function Page() {
                                variants={{visible: {opacity: 1, scale: 1}, hidden: {opacity: 0, scale: 0}}}
                                FadeUpTwoImage={'/image/problem-1.jpg'}
                                FadeUpTwoAlt={'pic1'}
-                               FadeUpTwoTextOne={' 幾度もエラーに悩まさせ、思うようにコーディングできなくなった時もあった\n' + 'また、逃げ出したくもなった'}
+                               FadeUpTwoTextOne={' 幾度もエラーに悩まさせ、思うようにコーディングできなくなった時もあった\n'}
                                FadeUpTwoTextTwo={'しかし、作ることが好きという気持ちは無くならなかった'}/>
                     <div className="">
                         <FadeUp initial={'hidden'} whileInView={'visible'} viewport={{once: true}}
@@ -57,7 +57,7 @@ export default function Page() {
                                 variants={{visible: {opacity: 1, scale: 1}, hidden: {opacity: 0, scale: 0}}}
                                 FadeUpImage={"/image/web-designer-1.jpg"} FadeUpAlt={"pic3"}
                                 FadeUpTextOne={'勉強をし続けて、webサイトを作ることができるようになった'}
-                                FadeUpTextTwo={'これからも満足してもらえるサイトを作り続けたい'}/>
+                                FadeUpTextTwo={'これからも満足していただけるサイトを作り続けたい'}/>
                     </div>
                     <FadeUpTwo initial={'hidden'}
                                whileInView={'visible'}
@@ -67,7 +67,7 @@ export default function Page() {
                                FadeUpTwoImage={'/image/web-design.jpg'}
                                FadeUpTwoAlt={'pic4'}
                                FadeUpTwoTextOne={'  今後は'}
-                               FadeUpTwoTextTwo={' アプリ制作をできるように勉強し続ける\nさらに期待に応えられるサイトの制作をする'}
+                               FadeUpTwoTextTwo={' アプリ制作をできるように勉強し続ける\nさらに期待に応えられるサービスの開発をする'}
                                FadeUpTwoStyle={'pb-20'}
                     />
                 </div>
